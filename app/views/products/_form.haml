@@ -1,0 +1,6 @@
+= form_for @product, remote: true do |f|
+  = label_tag(:name, 'Name:')
+  = f.text_field :name
+  = label_tag(:stock, 'Stock:')
+  = f.number_field :stock
+  = f.submit 'Save'

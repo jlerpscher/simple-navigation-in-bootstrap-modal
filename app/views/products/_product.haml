@@ -1,3 +1,5 @@
 %p= "#{product.name} - stock: #{product.stock}"
 
+= link_to "Edit product", edit_product_path(product), remote: true
+%br
 = link_to "Go back to list of products", products_path, remote: true
