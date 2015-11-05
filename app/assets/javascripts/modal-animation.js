@@ -1,6 +1,6 @@
 function animateModal() {
-  $('.modal-content').addClass('swing');
+  $('.modal-content').addClass('flipInX');
   $('.modal-content').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-    $(this).removeClass('swing');
+    $(this).removeClass('flipInX');
   });
 }
